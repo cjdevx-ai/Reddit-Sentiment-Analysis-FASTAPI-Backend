@@ -3,9 +3,9 @@ from reddit_client import fetch_comments
 import praw
 
 reddit = praw.Reddit(
-    client_id="YOUR_CLIENT_ID",
-    client_secret="YOUR_CLIENT_SECRET",
-    user_agent="REDDIT_USER_AGENT"
+    client_id="w2BbGi9Kdkirs8aQYkTo",
+    client_secret="kM5oH2oUTSD_vRb35YyMousQmruYw",
+    user_agent="Sentiment App by u/Ahley-6928"
 )
 
 sentiment_pipeline = pipeline(
