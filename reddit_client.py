@@ -10,11 +10,11 @@ load_dotenv()
 
 # Initialize the Reddit API client using PRAW
 reddit = praw.Reddit(
-    client_id="w2BbGi9Kdkirs8aQYkTo",
-    client_secret="kM5oH2oUTSD_vRb35YyMousQmruYw",
-    user_agent="Sentiment App by u/Ahley-6928"
+client_id="w2BbGi9Kdkirs8aQYkTo-w",
+client_secret="-kM5oH2oUTSD_vRb35YyMousQmruYw",
+user_agent="Sentiment App by u/Ahley-6928",
+        # Optional for public comments: username="YOUR_USERNAME", password="YOUR_PASSWORD"
 )
-
 
 # Initialize the sentiment analysis pipeline
 sentiment_pipeline = pipeline(
@@ -94,7 +94,7 @@ def fetch_comments(url: str) -> dict[int, dict[str, str]]:
 
     return comments_dict
 
-"""
+'''
 # --------------------------
 # Test block
 # --------------------------
@@ -108,4 +108,4 @@ if __name__ == "__main__":
     # Preview first 5 comments with sentiment
     for i, data in list(comments.items())[:5]:
         print(f"{i}. [{data['label']} ({data['score']})] {data['comment']}\n")
-"""
+'''
