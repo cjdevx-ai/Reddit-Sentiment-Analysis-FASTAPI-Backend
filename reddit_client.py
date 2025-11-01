@@ -10,10 +10,11 @@ load_dotenv()
 
 # Initialize the Reddit API client using PRAW
 reddit = praw.Reddit(
-    client_id=os.getenv("w2BbGi9Kdkirs8aQYkTo"),
-    client_secret=os.getenv("kM5oH2oUTSD_vRb35YyMousQmruYw"),
-    user_agent=os.getenv("Sentiment App by u/Ahley-6928", "reddit-sentiment-analyzer")
+    client_id="w2BbGi9Kdkirs8aQYkTo",
+    client_secret="kM5oH2oUTSD_vRb35YyMousQmruYw",
+    user_agent="Sentiment App by u/Ahley-6928"
 )
+
 
 # Initialize the sentiment analysis pipeline
 sentiment_pipeline = pipeline(
